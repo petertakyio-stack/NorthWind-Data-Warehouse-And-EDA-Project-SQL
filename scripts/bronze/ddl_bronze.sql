@@ -64,12 +64,12 @@ IF OBJECT_ID('bronze.customers', 'U') IS NOT NULL
 GO
 
 CREATE TABLE bronze.customers (
-    customer_id NVARCHAR(255),
-    company_name NVARCHAR(255),
-    contact_name NVARCHAR(255),
-    contact_title NVARCHAR(255),
-    city NVARCHAR(255),
-    country NVARCHAR(255)
+    customer_id NVARCHAR(50),
+    company_name NVARCHAR(50),
+    contact_name NVARCHAR(50),
+    contact_title NVARCHAR(50),
+    city NVARCHAR(50),
+    country NVARCHAR(50)
 );
 GO
 */
