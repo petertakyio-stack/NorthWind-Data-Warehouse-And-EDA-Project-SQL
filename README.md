@@ -163,13 +163,13 @@ The dataset covers **4 July 2013 to 6 May 2015**.
 | Unique orders | **830** |
 | Order lines | **2,155** |
 | Units sold | **51,317** |
-| Average order value | **$1,525.05** |
+| Average order value | **$587.38** |
 | Customers | **91** |
 | Products | **77** |
 | Product categories | **8** |
 | Employees | **9** |
 | Shipping companies | **3** |
-| Completed shipping outcomes | **809 orders** |
+| Completed unique shipping outcomes | **809 orders** |
 | Shipped early or on time | **772 orders** |
 | On-time shipping rate | **95.43%** |
 | Delayed shipping rate | **4.57%** |
