@@ -4,6 +4,8 @@
 ![Project](https://img.shields.io/badge/Project-Exploratory_Data_Analysis-informational)
 ![Data Model](https://img.shields.io/badge/Data_Model-Star_Schema-informational)
 
+---
+
 ## Project Overview
 
 This project performs exploratory data analysis on the **Gold layer of a Northwind data warehouse** using Microsoft SQL Server. The analysis converts order-line data into business insights about sales, products, customers, employees, shipping companies and delivery performance.
@@ -11,6 +13,8 @@ This project performs exploratory data analysis on the **Gold layer of a Northwi
 The SQL scripts follow a structured EDA process: database inspection, dimension exploration, date-range analysis, key-measure calculation, magnitude analysis and performance ranking.
 
 ![Northwind EDA Workflow](docs/EDA.png)
+
+---
 
 ## Project Objectives
 
@@ -21,11 +25,12 @@ The SQL scripts follow a structured EDA process: database inspection, dimension 
 - Identify leading and lowest-performing business segments through ranking analysis.
 - Produce reusable SQL scripts that can support reporting and dashboard development.
 
+---
+
 ## Data Model
 
 The analysis uses one order-line fact table connected to four dimensions. Because the fact table is stored at **order-line grain**, one order may appear on several rows. Order-level measures therefore use `COUNT(DISTINCT order_id)`.
 
-![Northwind Star Schema](docs/northwind_star_schema.png)
 
 | Table | Purpose | Records |
 |---|---|---:|
@@ -36,6 +41,8 @@ The analysis uses one order-line fact table connected to four dimensions. Becaus
 | `gold.dim_shippers` | Shipping-company information | 3 |
 
 The order data covers **04 July 2013 to 06 May 2015**.
+
+---
 
 ## Repository Structure
 
@@ -62,6 +69,8 @@ Northwind_EDA/
 └── README.md
 ```
 
+---
+
 ## Analysis Workflow
 
 | Stage | Script | Main Purpose |
@@ -73,9 +82,9 @@ Northwind_EDA/
 | 5 | [`05_nw_magnitude_analysis.sql`](scripts/05_nw_magnitude_analysis.sql) | Compare business measures across customers, products, employees and shippers. |
 | 6 | [`06_nw_ranking_analysis.sql`](scripts/06_nw_ranking_analysis.sql) | Rank top and bottom products, categories, employees, customers, locations and shippers. |
 
-## Key Performance Snapshot
+---
 
-![Northwind KPI Summary](docs/northwind_kpi_summary.png)
+## Key Performance Snapshot
 
 | Measure | Result |
 |---|---:|
@@ -92,6 +101,8 @@ Northwind_EDA/
 
 > Shipping rates are calculated from unique shipped orders. Orders classified as `N/A` are excluded because they do not have a completed shipping outcome.
 
+---
+
 ## Selected Findings
 
 - **Côte de Blaye** generated the highest product sales at **$141,396.74**.
@@ -101,6 +112,8 @@ Northwind_EDA/
 - The **USA** was the leading customer market with **$245,584.65** in sales.
 - **United Package** handled the highest sales value at **$533,547.74**.
 - Of the **809** orders with a completed shipping outcome, **772** were shipped early or on time.
+
+---
 
 ## SQL Techniques Demonstrated
 
@@ -116,6 +129,8 @@ Northwind_EDA/
 - Safe division using `NULLIF()`
 - Numeric formatting with `CAST()` and `DECIMAL`
 
+---
+
 ## How to Run the Analysis
 
 1. Ensure the Northwind data warehouse has been created and the Gold-layer tables are available.
@@ -123,6 +138,8 @@ Northwind_EDA/
 3. Run the scripts in numerical order, beginning with database exploration.
 4. Review each result set and compare the detailed findings with the consolidated measure report.
 5. Open [`summary_EDA_measure_analysis.pdf`](docs/summary_EDA_measure_analysis.pdf) for the saved measure-analysis summary.
+
+---
 
 ## Important Analytical Note
 
@@ -136,6 +153,8 @@ SUM(quantity)                  -- counts the number of units sold
 
 Using the correct grain prevents orders containing several products from being counted multiple times.
 
+---
+
 ## Potential Extensions
 
 - Monthly and yearly sales trend analysis
@@ -145,6 +164,25 @@ Using the correct grain prevents orders containing several products from being c
 - Shipping-company service-level analysis
 - Interactive Power BI or Tableau dashboard development
 
-## Author
+---
 
-Developed by [petertakyio-stack](https://github.com/petertakyio-stack).
+## 👨🏽‍💻 About Me
+
+Hi, I’m **Peter Takyi Ohemeng** — a **petroleum engineer and environmental management professional** building strong expertise in **data analytics, business intelligence, and data engineering**.
+
+🌍 I aspire to become an **environmental data analyst**, using data to identify environmental risks, improve operational performance, and support smarter decision-making across the energy and extractive industries.
+
+⚙️ I am particularly interested in finding the right balance between resource development and environmental responsibility. My long-term goal is to help organisations derive the safest and fullest possible benefits from extractive activities while protecting the environment and the communities that depend on it.
+
+📊 Through projects like this, I am developing practical skills in **SQL, data warehousing, dimensional modelling, ETL development, and analytics reporting** — transforming raw data into reliable insights that support better business and environmental decisions.
+
+> 🌱 **My mission:** To combine engineering knowledge, environmental awareness, and data-driven insights to contribute to a safer, smarter, and more sustainable future.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+You are free to use, modify, and share this project with proper attribution.
+
+---
