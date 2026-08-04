@@ -276,7 +276,10 @@ BEGIN
             product_name,
             quantity_per_unit,
             CAST(unit_price AS DECIMAL(10, 2)) AS unit_price, --Convert the product price to DECIMAL(10,2) to retain a consistent financial format
-            discontinued,
+            CASE
+                WHEN discontinued = 0 THEN 'NO'
+                ELSE 'YES'
+            END AS discontinued,
             category_id
         FROM bronze.products;
 
