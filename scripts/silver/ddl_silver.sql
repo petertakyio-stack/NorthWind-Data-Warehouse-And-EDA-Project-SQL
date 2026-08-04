@@ -85,7 +85,7 @@ CREATE TABLE silver.products (
     product_name NVARCHAR(50),
     quantity_per_unit NVARCHAR(50),
     unit_price FLOAT,
-    discontinued BIT,
+    discontinued NVARCHAR(50),
     category_id INT,
     dwh_create_date    DATETIME2 DEFAULT GETDATE()
 );
