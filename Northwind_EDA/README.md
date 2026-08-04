@@ -115,19 +115,9 @@ Northwind_EDA/
 
 ---
 
-## SQL Techniques Demonstrated
+## Skills & Technologies
 
-- Aggregate functions: `COUNT()`, `SUM()` and `AVG()`
-- Unique order counting with `COUNT(DISTINCT)`
-- Conditional aggregation using `CASE`
-- Date analysis with `MIN()`, `MAX()` and `DATEDIFF()`
-- Multi-table analysis using `LEFT JOIN`
-- Segmentation with `GROUP BY`
-- Sorting and top/bottom analysis with `ORDER BY` and `TOP`
-- Ranking with `ROW_NUMBER()`
-- Consolidated reporting with `UNION ALL`
-- Safe division using `NULLIF()`
-- Numeric formatting with `CAST()` and `DECIMAL`
+<p align="left"> <img src="https://img.shields.io/badge/SQL%20Server-Data%20Analysis-CC2927?logo=microsoftsqlserver&logoColor=white" /> <img src="https://img.shields.io/badge/Exploratory%20Data%20Analysis-Business%20Insights-0A66C2" /> <img src="https://img.shields.io/badge/Data%20Warehousing-Gold%20Layer-6F42C1" /> <img src="https://img.shields.io/badge/Star%20Schema-Dimensional%20Modelling-2E8B57" /> <img src="https://img.shields.io/badge/SQL%20Joins-Multi--Table%20Analysis-00758F" /> <img src="https://img.shields.io/badge/Aggregate%20Functions-SUM%20%7C%20COUNT%20%7C%20AVG-D4A017" /> <img src="https://img.shields.io/badge/Window%20Functions-ROW__NUMBER-4B8BBE" /> <img src="https://img.shields.io/badge/Ranking%20Analysis-Top%20%26%20Bottom%20Performance-E67E22" /> <img src="https://img.shields.io/badge/Conditional%20Aggregation-CASE%20Expressions-17A2B8" /> <img src="https://img.shields.io/badge/Date%20Analysis-MIN%20%7C%20MAX%20%7C%20DATEDIFF-7952B3" /> <img src="https://img.shields.io/badge/Data%20Validation-DISTINCT%20%26%20NULL%20Handling-28A745" /> <img src="https://img.shields.io/badge/GitHub-Project%20Documentation-181717?logo=github&logoColor=white" /> </p>
 
 ---
 
