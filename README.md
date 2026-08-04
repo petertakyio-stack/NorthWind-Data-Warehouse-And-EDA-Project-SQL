@@ -283,14 +283,23 @@ After validating the Gold layer, run the six EDA scripts in numerical order.
 
 ---
 
-## About Me
+## 👨🏽‍💻 About Me
 
-Hi, I’m **Peter Takyi Ohemeng** — a petroleum engineer and environmental management professional developing expertise in data analytics, business intelligence and data engineering.
+Hi, I’m **Peter Takyi Ohemeng** — a **petroleum engineer and environmental management professional** building strong expertise in **data analytics, business intelligence, and data engineering**.
 
-I am interested in using data to improve operational performance, identify risks and support better decisions across the energy, extractive and environmental sectors.
+🌍 I aspire to become an **environmental data analyst**, using data to identify environmental risks, improve operational performance, and support smarter decision-making across the energy and extractive industries.
+
+⚙️ I am particularly interested in finding the right balance between resource development and environmental responsibility. My long-term goal is to help organisations derive the safest and fullest possible benefits from extractive activities while protecting the environment and the communities that depend on it.
+
+📊 Through projects like this, I am developing practical skills in **SQL, data warehousing, dimensional modelling, ETL development, and analytics reporting** — transforming raw data into reliable insights that support better business and environmental decisions.
+
+> 🌱 **My mission:** To combine engineering knowledge, environmental awareness, and data-driven insights to contribute to a safer, smarter, and more sustainable future.
 
 ---
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+You are free to use, modify, and share this project with proper attribution.
+
+---
