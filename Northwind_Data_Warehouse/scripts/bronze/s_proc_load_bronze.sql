@@ -70,7 +70,7 @@ BEGIN
         -- Load category records from the CSV file into the bronze table.
         PRINT '>> Inserting Data Into: bronze.categories';
         BULK INSERT bronze.categories
-        FROM '/var/opt/mssql/data/categories.csv'
+        FROM '/var/opt/mssql/data/categories.csv'  -- replace this with the actual location of the csv file on your machine or system
         WITH (
             FIELDTERMINATOR = ',',       -- Columns in the file are separated by commas.
             ROWTERMINATOR = '0x0a',      -- Each row ends with a line-feed character.
@@ -119,7 +119,7 @@ BEGIN
 
         PRINT '>> Inserting Data Into: bronze.customers';
         BULK INSERT bronze.customers
-        FROM '/var/opt/mssql/data/customers.csv'
+        FROM '/var/opt/mssql/data/customers.csv'  -- replace this with the actual location of the csv file on your machine or system
         WITH (
             FIELDTERMINATOR = ',',
             ROWTERMINATOR = '0x0a',
@@ -151,7 +151,7 @@ BEGIN
         -- Load employee records from the CSV file.
         PRINT '>> Inserting Data Into: bronze.employees';
         BULK INSERT bronze.employees
-        FROM '/var/opt/mssql/data/employees.csv'
+        FROM '/var/opt/mssql/data/employees.csv'  -- replace this with the actual location of the csv file on your machine or system
         WITH (
             FIELDTERMINATOR = ',',       
             ROWTERMINATOR = '0x0a',      
@@ -182,8 +182,8 @@ BEGIN
 
         -- Load order-detail records from the CSV file.
         PRINT '>> Inserting Data Into: bronze.order_details';
-        BULK INSERT bronze.order_details
-        FROM '/var/opt/mssql/data/order_details.csv'
+        BULK INSERT bronze.order_details  
+        FROM '/var/opt/mssql/data/order_details.csv'  -- replace this with the actual location of the csv file on your machine or system
         WITH (
             FIELDTERMINATOR = ',',       -- Separate columns using commas.
             ROWTERMINATOR = '0x0a',      -- Separate records using line-feed characters.
@@ -215,7 +215,7 @@ BEGIN
         -- Load order records from the CSV file.
         PRINT '>> Inserting Data Into: bronze.orders';
         BULK INSERT bronze.orders
-        FROM '/var/opt/mssql/data/orders.csv'
+        FROM '/var/opt/mssql/data/orders.csv'  -- replace this with the actual location of the csv file on your machine or system
         WITH (
             FIELDTERMINATOR = ',',       -- Separate columns using commas.
             ROWTERMINATOR = '0x0a',      -- Separate records using line-feed characters.
@@ -255,7 +255,7 @@ BEGIN
 
         PRINT '>> Inserting Data Into: bronze.products';
         BULK INSERT bronze.products
-        FROM '/var/opt/mssql/data/products.csv'
+        FROM '/var/opt/mssql/data/products.csv'  -- replace this with the actual location of the csv file on your machine or system
         WITH (
             FIELDTERMINATOR = ',',
             ROWTERMINATOR = '0x0a',
@@ -287,7 +287,7 @@ BEGIN
         -- Load shipper records from the CSV file.
         PRINT '>> Inserting Data Into: bronze.shippers';
         BULK INSERT bronze.shippers
-        FROM '/var/opt/mssql/data/shippers.csv'
+        FROM '/var/opt/mssql/data/shippers.csv'  -- replace this with the actual location of the csv file on your machine or system
         WITH (
             FIELDTERMINATOR = ',',       -- Separate columns using commas.
             ROWTERMINATOR = '0x0a',      -- Separate records using line-feed characters.
