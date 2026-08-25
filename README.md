@@ -287,7 +287,7 @@ After validating the Gold layer, run the six EDA scripts in numerical order.
 
 Hi, I’m **Peter Takyi Ohemeng** — a **petroleum engineer and environmental management professional** building strong expertise in **data analytics, business intelligence, and data engineering**.
 
-🌍 I aspire to become an **environmental data analyst**, using data to identify environmental risks, improve operational performance, and support smarter decision-making across the energy and extractive industries.
+🌍 I aspire to become an **HSE data and analytics expert**, using data to identify health, safety, and environmental risks, improve operational performance, strengthen compliance, and support better decision-making across the energy and extractive industries.
 
 ⚙️ I am particularly interested in finding the right balance between resource development and environmental responsibility. My long-term goal is to help organisations derive the safest and fullest possible benefits from extractive activities while protecting the environment and the communities that depend on it.
 
